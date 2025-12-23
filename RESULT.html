@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .trophy {
+            font-size: 100px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .name {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .achievement {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .achievement h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+
+        .cgpa {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            color: #333;
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin: 30px 0;
+            padding: 20px;
+        }
+
+        .support-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        .support-section h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .hearts {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .heart {
+            font-size: 30px;
+            animation: heartbeat 1.5s infinite;
+            animation-delay: calc(var(--i) * 0.2s);
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: #f0f;
+            position: absolute;
+            animation: confetti-fall 3s linear infinite;
+        }
+
+        @keyframes confetti-fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        .stars {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="trophy">🏆</div>
+        
+        <h1>CONGRATULATIONS KADDUUUUU!</h1>
+        
+        <div class="achievement">
+            <h2>1st Semester Nursing Exams</h2>
+            <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+            <div class="cgpa">7.0 CGPA</div>
+            <p style="font-size: 1.2em;">Outstanding Achievement!</p>
+        </div>
+
+        <div class="message">
+            You did it Moteee! Your hard work, dedication, and countless hours of studying have paid off beautifully. This is just the beginning of an incredible journey in nursing, and I couldn't be more proud of you!
+        </div>
+
+        <div class="support-section">
+            <h3>Your Mota is forever By Your Side</h3>
+            <div class="hearts">
+                <span class="heart" style="--i: 1">❤️</span>
+                <span class="heart" style="--i: 2">💕</span>
+                <span class="heart" style="--i: 3">💖</span>
+                <span class="heart" style="--i: 4">💗</span>
+                <span class="heart" style="--i: 5">💓</span>
+            </div>
+            <p style="color: #555; font-size: 1.2em; line-height: 1.8;">
+                Through every exam, every challenge, every late-night study session, and every triumph ahead, I'll be right here cheering you on. You're going to be an amazing nurse, and I'm so lucky to witness your journey. Here's to many more successes together! 🌟
+            </p>
+        </div>
+
+        <button class="button" onclick="celebrate()">🎉 Celebrate Again! 🎉</button>
+    </div>
+
+    <script>
+        function createConfetti() {
+            const colors = ['#667eea', '#764ba2', '#f093fb', '#4facfe', '#43e97b', '#fa709a'];
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 3 + 's';
+                confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                document.body.appendChild(confetti);
+                
+                setTimeout(() => confetti.remove(), 5000);
+            }
+        }
+
+        function celebrate() {
+            createConfetti();
+            const trophy = document.querySelector('.trophy');
+            trophy.style.animation = 'none';
+            setTimeout(() => {
+                trophy.style.animation = 'bounce 2s infinite';
+            }, 10);
+        }
+
+        // Create initial confetti on load
+        window.onload = () => {
+            setTimeout(createConfetti, 500);
+        };
+    </script>
+</body>
+</html>
